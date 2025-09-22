@@ -10,10 +10,8 @@ function App() {
       <div>
         <h1>Hello, World!</h1>
         <h2>teste</h2>
-
-        
       </div>
   )
 }
 
-export default App
+export default App;
