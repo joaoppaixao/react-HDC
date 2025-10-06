@@ -8,6 +8,9 @@ import Data from './components/Data';
 import Name from './components/Name';
 import Contador from './components/Contador';
 
+// 4 - renderização de lista
+import ListRender from './components/ListRender';
+
 function App() {
 
   return (
@@ -21,6 +24,8 @@ function App() {
       <Data />
       <Name />
       <Contador />
+      {/* 4 - render de lista */}
+      <ListRender />
     </div>
   )
 }
