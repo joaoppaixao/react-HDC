@@ -5,6 +5,8 @@ import night from './assets/night.jpg';
 
 // 3 - useState
 import Data from './components/Data';
+import Name from './components/Name';
+import Contador from './components/Contador';
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <img src={night} alt="Outra imagem" />
       {/* 3 - useState */}
       <Data />
+      <Name />
+      <Contador />
     </div>
   )
 }
