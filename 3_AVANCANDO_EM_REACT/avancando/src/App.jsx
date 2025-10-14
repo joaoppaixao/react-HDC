@@ -11,6 +11,9 @@ import Contador from './components/Contador';
 // 4 - renderização de lista
 import ListRender from './components/ListRender';
 
+{/* 7 - conditional render */}
+import ConditionalRender from './components/ConditionalRender';
+
 function App() {
 
   return (
@@ -26,6 +29,8 @@ function App() {
       <Contador />
       {/* 4 - render de lista */}
       <ListRender />
+      {/* 7 - conditional render */}
+      <ConditionalRender />
     </div>
   )
 }
