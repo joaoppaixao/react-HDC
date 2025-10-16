@@ -35,12 +35,25 @@ import Container from './components/Container';
 
 // 14 - função em prop
 import ExecuteFunction from './components/ExecuteFunction';
+import { useState } from 'react';
+
+// 15 - state lift
+import Message from './components/Message';
+import ChangeMessage from './components/ChangeMessage';
+
 
 function App() {
 
   // 14 - função em prop
   function showMessage() {
     console.log("Evento do componente pai")
+  }
+
+  // 15 - state lift
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg)
   }
 
   return (
@@ -77,6 +90,9 @@ function App() {
       </Container>
       {/* 14 - função em prop */}
       <ExecuteFunction myFunction={showMessage} />
+      {/* 15 - state lift */}
+      <Message msg={message}/>
+      <ChangeMessage handleMessage={handleMessage} />
     </div>
   )
 }
