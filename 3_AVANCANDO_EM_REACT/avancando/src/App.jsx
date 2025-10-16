@@ -14,6 +14,9 @@ import ListRender from './components/ListRender';
 {/* 7 - conditional render */}
 import ConditionalRender from './components/ConditionalRender';
 
+// 8 - props 
+import ShowUserName from './components/ShowUserName';
+
 function App() {
 
   return (
@@ -31,6 +34,8 @@ function App() {
       <ListRender />
       {/* 7 - conditional render */}
       <ConditionalRender />
+      {/* 8 - props */}
+      <ShowUserName name="João" />
     </div>
   )
 }
