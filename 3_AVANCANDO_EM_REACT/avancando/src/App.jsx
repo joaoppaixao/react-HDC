@@ -30,6 +30,9 @@ const cars = [
 // 12 - fragments
 import Fragment from './components/Fragment';
 
+// 13 - children
+import Container from './components/Container';
+
 function App() {
 
   return (
@@ -60,6 +63,10 @@ function App() {
       ))}
       {/* 12 - fragments */}
       <Fragment />
+      {/* 13 - children */}
+      <Container>
+        <p>Alguma coisa</p>
+      </Container>
     </div>
   )
 }
