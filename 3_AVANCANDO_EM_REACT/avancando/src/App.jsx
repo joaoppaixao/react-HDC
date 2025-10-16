@@ -17,6 +17,9 @@ import ConditionalRender from './components/ConditionalRender';
 // 8 - props 
 import ShowUserName from './components/ShowUserName';
 
+// 9 - desestruturando props
+import CarDetails from './components/CarDetails';
+
 function App() {
 
   return (
@@ -36,6 +39,8 @@ function App() {
       <ConditionalRender />
       {/* 8 - props */}
       <ShowUserName name="João" />
+      {/* 9 - desestruturando props */}
+      <CarDetails brand="Porsche" km={5000} color="Preta" />
     </div>
   )
 }
