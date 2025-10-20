@@ -3,6 +3,8 @@ import './App.css'
 // 2 - css do componente
 import MyComponent from './components/MyComponent'
 
+import Title from './components/Title';
+
 function App() {
 
   // 4 - css dinâmico
@@ -25,6 +27,8 @@ function App() {
       <h2 style={n > 20 ? {color: "purple"} : {color: "magenta"}}>CSS dinâmico</h2>
       { /* 5 - classes dinamicas */}
       <h2 className={redTitle ? "red-title" : "title"}>Se for verdadeiro fica vermelho</h2>
+      { /* 6 - css modules */}
+      <Title />
     </div>
   )
 }
