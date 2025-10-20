@@ -5,6 +5,9 @@ import MyComponent from './components/MyComponent'
 
 function App() {
 
+  // 4 - css dinâmico
+  const n = 12;
+
   return (
     <div>
       { /* 1 - css global */}
@@ -14,6 +17,9 @@ function App() {
       <p>Pegou o CSS do componente</p>
       { /* 3 - inline style */}
       <p style={{color: "blue", padding: "20px", backgroundColor: "lightgray"}}>Este elemento tem estilos inline</p>
+      { /* 4 - inline style dinâmico */}
+      <h2 style={n > 10 ? {color: "purple"} : {color: "magenta"}}>CSS dinâmico</h2>
+      <h2 style={n > 20 ? {color: "purple"} : {color: "magenta"}}>CSS dinâmico</h2>
     </div>
   )
 }
