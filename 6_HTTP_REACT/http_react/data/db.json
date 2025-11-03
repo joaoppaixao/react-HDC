@@ -54,6 +54,11 @@
       "id": "57d4",
       "name": "pc gamer ",
       "price": "5000"
+    },
+    {
+      "id": "8bb7",
+      "name": "testando carregamento",
+      "price": "20"
     }
   ]
 }
